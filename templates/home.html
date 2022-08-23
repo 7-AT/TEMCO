@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+{% load static %}
+{%block title %} Home {% endblock title %}
+{% block homeactive %} active {% endblock homeactive %}
+{% block body %}
+<style>
+  #carousel .carousel-item img {
+    object-fit: fill;
+    object-position: center;
+    height: 60vh;
+    overflow: hidden;
+  }
+
+  #carousel .carousel-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image:
+      linear-gradient(to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, .5));
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+  }
+
+  .card img {
+    object-fit: scale-down;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+  }
+</style>
+
+<div id="carousel" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'img/1.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/2.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/3.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container mt-3 mb-3">
+  <div class="row">
+    <div class="col-sm-6" style="background-color: #9ec0d8">
+      <div class="container mt-4">
+        <h1 align="center">WELCOME</h1>
+        <p align="justify">We at Tass Equipment Manufacuring Company are engaged in manufacturing equipments for mining,
+          steel, cement, various chemical plants and other allied industries.</p>
+        <p align="justify">With all the years of service and experience we understand and deliver customers need with
+          100% passion and dedication</p>
+        <p align="justify">Our expertise also lie in Pre-Fabricated buildings, material processing equipments and
+          material handling equipments like goods lift, manual stacker/forklift, monkey crane, trolleys.</p>
+        <p align="justify">We have an inhouse machine shop and fabrication facility managed by Mr. T.D. Thambi, a
+          graduate in chemical engineering who has a vast experience of 30yrs in engineering field.</p>
+        <p align="justify">At TEMCO, we pride ourselves on providing customers with well engineered and efficient
+          equipment/services which meet industrial standards at competitive cost.</p>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="container mt-3 mb-3">
+        <div class="row equal">
+          <div class="col-sm-6 d-flex">
+            <div class="card mb-3 shadow p-3">
+              <img src="{% static 'img/reliable.jpg' %}" class="d-block w-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">RELIABLE</h5>
+                <p class="card-text">With supporting text below as a natura</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 d-flex">
+            <div class="card mb-3 shadow p-3">
+              <img src="{% static 'img/safety.jpg' %}" class="d-block w-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SAFE DESIGN</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row equal">
+          <div class="col-sm-6 d-flex">
+            <div class="card mb-3 shadow p-3">
+              <img src="{% static 'img/economic.jpg' %}" class="d-block w-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ECONOMIC</h5>
+                <p class="card-text">With hello ababab ababab </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 d-flex">
+            <div class="card mb-3 shadow p-3">
+              <img src="{% static 'img/strength.jpg' %}" class="d-block w-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">STRENGTH</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row equal">
+          <div class="col-sm-6 d-flex">
+            <div class="card mb-3 shadow p-3">
+              <img src="{% static 'img/easy.jpg' %}" class="d-block w-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">EASY TO OPERATE</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 d-flex">
+            <div class="card mb-3 shadow p-3">
+              <img src="{% static 'img/designflex.jpg' %}" class="d-block w-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">DESIGN FLEXIBILITY</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+<div class="container mt-3">
+  <div class="card mb-5 mt-5 shadow p-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="..." class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-3">
+  <div class="card mb-5 mt-5 shadow p-3">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="..." class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-3">
+  <div class="card mb-5 mt-5 shadow p-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="..." class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body%}
