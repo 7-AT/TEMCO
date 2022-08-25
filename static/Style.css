@@ -20,3 +20,13 @@ section .content
 {
     max-width: 80%;
 }
+section .content h2
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 3em;
+    transition: 0.5s;
+    
+}
