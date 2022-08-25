@@ -5,7 +5,7 @@ def homepage(request):
     return render(request, 'home.html')
 
 def aboutus(request):
-    return render(request, 'aboutus.html')
+    return render(request, 'AboutUs.html')
 
 def contactus(request):
     if request.method == "POST":
