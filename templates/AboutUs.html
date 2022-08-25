@@ -42,4 +42,12 @@
         <p>Info abous TASS Equipment Manufacturing Company</p>
         </div>
     </section>
+    {% load static %}
+    <script src="{% static 'scroll-out.js' %}"></script>  
+    <script type="text/javascript">
+        ScrollOut({
+            targets: 'h2,h3,p'
+        })
+    </script>
+
     {% endblock body%}

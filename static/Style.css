@@ -30,6 +30,18 @@ section .content h2
     display: inline-block;
     font-size: 3em;
     transition: 0.5s;
-    transition-property: width;
-
+    transform-origin: left;
+    transform: scaleX(1);
+}
+section .content h2:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e02bff;
+    transform-origin: right;
+    
 }
