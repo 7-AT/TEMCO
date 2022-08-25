@@ -7,6 +7,8 @@ def homepage(request):
 def AboutUs(request):
     return render(request, 'AboutUs.html')
 
+
+
 def contactus(request):
     if request.method == "POST":
         name = request.POST['name']

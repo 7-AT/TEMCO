@@ -28,5 +28,6 @@ section .content h2
     display: inline-block;
     font-size: 3em;
     transition: 0.5s;
-    
+    transition-property: width;
+
 }
