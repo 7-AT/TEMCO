@@ -4,7 +4,7 @@ from home.models import Contact
 def homepage(request):
     return render(request, 'home.html')
 
-def aboutus(request):
+def AboutUs(request):
     return render(request, 'AboutUs.html')
 
 def contactus(request):
