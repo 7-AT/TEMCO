@@ -2,8 +2,8 @@ body
 {
     margin: 0;
     padding: 0;
-    font-family: consolas;
-
+    
+    
 }
 section
 {
@@ -15,10 +15,12 @@ section
     align-items: center;
     background: #262626;
     color: #fff;
+    font-family: consolas;
 }
 section .content
 {
     max-width: 80%;
+    
 }
 section .content h2
 {
